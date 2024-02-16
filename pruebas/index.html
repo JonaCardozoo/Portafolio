@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título de tu página</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('YT79i6LEEtncoBRwh')
+</script>
+</head>
+<body>
+
+<section class="photo" id="inicio">
+  <div class="nav" id="sticker">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <div class="menu">
+      <a href="#inicio">inicio</a>
+      <a href="#servicio">servicios</a>
+      <a href="#trabajo">trabajo</a>
+      <a href="#contacto">contacto</a>
+    </div>
+  </div>
+  <div class="photo-text">
+    <h4 data-ix="skype">Jonatan Cardozo</h4>
+    <p data-ix="subtitle-hero-up">Programador BackEnd.</p>
+    <p data-ix="subtitle-hero-up">Estudiante de 2do año de la carrera TUP (Tecnicatura Universitaria en programacion).</p>
+  </div>
+  <div class="overlay"></div>
+</section>
+
+<section class="content">
+  <div class="grand-title" id="servicio">
+    <h4 data-ix="slowfade-scroll-bigs">Servicios!</h4>
+    
+  </div>
+  <div class="text">
+    <div class="inner-text">
+      <h3 data-ix="slowfade-scroll-bigs">C#</h3>
+      <i class="ic ion-fork"></i>
+      <div class="text-box">
+        <h5 data-ix="slowfade-scroll-bigs">.NET</h5>
+        <p data-ix="slowfade-scroll-bigs">Es el lenguaje que mas domino en la actualidad</p>
+      </div>
+    </div>
+    <div class="inner-text">
+      <h3 data-ix="slowfade-scroll-bigs">Java</h3>
+      <i class="ic ion-knife"></i>
+      <div class="text-box">
+        <h5 data-ix="slowfade-scroll-bigs">Eclipse</h5>
+        <p data-ix="slowfade-scroll-bigs">Es el lenguaje que estoy aprendiendo actualmente</p>
+      </div>
+    </div>
+    <div class="inner-text">
+      <h3 data-ix="slowfade-scroll-bigs">javascript</h3>
+      <i class="ic ion-spoon"></i>
+      <div class="text-box">
+        <h5 data-ix="slowfade-scroll-bigs">Visual Studio Code</h5>
+        <p data-ix="slowfade-scroll-bigs">Es un lenguaje que me gusta mucho y lo suelo usar en mis paginas web como la que estas viendo</p>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  <section class="portafolio" id="trabajo">
+    <h4 data-ix="slowfade-scroll-bigs">Trabajos</h4>
+    <p>Aporto una sólida base en C# y una pasión por aprender nuevas tecnologías como Java y JavaScript. Me entusiasma crear soluciones innovadoras y funcionales, como lo demuestran mis diversos proyectos disponibles en GitHub.</p>
+    <div class="portafolio-container">
+      <section class="portafolio-item">
+        <img src="gitlogo.png" alt="" class="portafolio-img" />
+        <section class="portafolio-text">
+          <h5>Mis Proyectos</h5>
+          <p>En mi GitHub encontraras todos mis proyectos, que he echo en mi universidad o particularmente.</p>
+        </section>
+      </section>
+      </section>
+    </div>
+  </section>
+</section>
+
+<div class="footer" id="contacto">
+  <h4 data-ix="slowfade-scroll-bigs">Contacto</h4>
+  <div class="container">
+    <form id="form">
+      <ul class="flex-outer">
+        <li>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="Ingresa Nombre" class="rect" id="from_name">
+        </li>
+        <li>
+          <label for="Mensaje">message</label>
+          <input type="text" name="mensaje" placeholder="Ingresa el mensaje" class="rect" id="message">
+        </li>
+        <li>
+          <label for="EMAIL">email_id</label>
+          <input type="text" name="Email" placeholder="Ingrese su Correo" class="rect" id="email_id">
+        </li>
+        
+          
+            <input type="submit" id="button" value="Send Email" >
+    </ul>
+    </form>
+    <script src="enviarCorreo.js"></script>
+   
+  </div>
+</div>
+
+
+</body>
+</html>
